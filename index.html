@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cat or Dog predictor</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+  </head>
+  <body>
+    <a href="https://github.com/hoangnguyen719/dog-cat-classifier-page">
+      <img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_green_007200.png?resize=149%2C149"
+      class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1">
+    </a>
+    <header>
+        <h1>Predict whether an image is of a cat or a dog</h1>
+        <a href="https://github.com/hoangnguyen719/dog-cat-classifier-page" target="_blank">Source Github Repo</a>
+        <p>
+          Model provided by <a href="https://course.fast.ai/Lessons/lesson2.html">fastai</a>
+          , API hosted by <a href="https://huggingface.co/spaces/hoangng719/dog-cat-classifier" target="_blank">hugging face</a>
+        </p>
+        <p>and HTML and JS template copied from <a href="https://github.com/nuvic/predict_image">@nuvic's Github Repo</a></p>
+    </header>
+    <main>
+        <header>
+            <h2>Submit a picture of either a cat or dog</h2>
+            <p id="prediction"></p>
+            <p id="confidences"></p>
+            <p id="error"></p>
+        </header>
+        <section>
+            <img id="myImage" height="400" width="400">
+            <form id="form">
+                <label for="fileInput"></label>
+                <input id="fileInput" type="file" onchange="onFileSelected(event)" name="File">
+            </form>
+        </section>
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>
